@@ -1,38 +1,114 @@
+html { 
+  font-size: 62.5%;
+}
+
+body { 
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+  font-family: "Raleway", "sans-serif";
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+} 
 
 .App-link {
   color: #61dafb;
+} 
+
+div { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+h1 { 
+  font-size: 3rem;
+  /* text-transform: capitalize; */
+}
+.h1Style{
+  font-size: 3rem;
+  /* text-transform: capitalize; */
+  color: #136ca7;
+  padding: 1rem;
+  width: 60rem;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn { 
+  margin: auto;
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  background-color: #2980b9;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.btn:hover{
+  background-color: #136ca7;
+}
+
+.btnInner{
+  background-color: rgb(218, 64, 64);
+  color: white;
+  border: none;
+  outline: none;
+  float: right;
+  width: 7rem;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  
+}
+
+/*form page*/
+.form{
+  font-size: 3rem;
+  /* text-transform: capitalize; */
+  color: whitesmoke;
+  padding: 1rem;
+  width: 25rem;
+  border-radius: 5px;
+  background-color: rgb(58, 126, 199);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+}
+.form input{
+  border-radius: 0.5rem;
+  border: none;
+}
+.form label{
+ font-size: 2rem;
+}
+
+.show-form{
+  font-size: 3rem;
+  /* text-transform: capitalize; */
+  color: whitesmoke;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 25rem;
+  border-radius: 5px;
+  background-color: rgb(58, 126, 199);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+}
+.show-form input{
+  border-radius: 0.5rem;
+  border: none;
+}
+.show-form label{
+ font-size: 2rem;
 }
