@@ -1,4 +1,4 @@
-html { 
+/* html { 
   font-size: 62.5%;
 }
 
@@ -31,11 +31,9 @@ div {
 
 h1 { 
   font-size: 3rem;
-  /* text-transform: capitalize; */
 }
 .h1Style{
   font-size: 3rem;
-  /* text-transform: capitalize; */
   color: #136ca7;
   padding: 1rem;
   width: 60rem;
@@ -75,10 +73,8 @@ h1 {
   
 }
 
-/*form page*/
 .form{
   font-size: 3rem;
-  /* text-transform: capitalize; */
   color: whitesmoke;
   padding: 1rem;
   width: 25rem;
@@ -96,13 +92,24 @@ h1 {
 
 .show-form{
   font-size: 3rem;
-  /* text-transform: capitalize; */
-  color: whitesmoke;
+  color: white;
   padding: 1rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 25rem;
   border-radius: 5px;
-  background-color: rgb(58, 126, 199);
+  background-color: rgb(34, 242, 152);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+}
+.show-form1{
+  font-size: 3rem;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 25rem;
+  border-radius: 5px;
+  background-color: rgb(96, 236, 20);
   box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
 }
 .show-form input{
@@ -112,3 +119,99 @@ h1 {
 .show-form label{
  font-size: 2rem;
 }
+.show{
+  margin-top: 2rem;
+  border: 2px solid;
+}
+.main{
+  background-color: red;
+  width: 50rem;
+  height: 50rem;
+} */
+
+
+/*---------------------fetch data from github using api-----------------------------*/
+body {
+  background-color: #b3e5fc;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.loadingDiv {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 450px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.image {
+  min-width: 155px;
+  margin-right: 20px;
+}
+
+.stats {
+  background: #f2f5f8 !important;
+  color: #000 !important;
+}
+
+.articles {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.number1 {
+  font-weight: 500;
+}
+
+.followers {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.number2 {
+  font-weight: 500;
+}
+
+.rating {
+  font-size: 10px;
+  color: #a1aab9;
+}
+
+.number3 {
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

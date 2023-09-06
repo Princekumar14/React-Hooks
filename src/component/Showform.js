@@ -1,27 +1,34 @@
-// import React from 'react'
+import React, { useState } from 'react'
+import BasicForm from './BasicForm';
 
-// const Showform = () => {
-//     return (
-//         <div className='show-form' >
-//             <form onSubmit={submitForm}>
-//                 <div>
-//                     <label htmlFor="show-email">Email</label>
-//                     <input value={currrentElement.email} type="text" name="show-email" id="show-email"
-//                         autoComplete='off' />
-//                 </div>
+const Showform = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-//                 <div>
-//                     <label htmlFor="show-password">Password</label>
-//                     <input value={currrentElement.password} type="text" name="show-password" id="show-password"
-//                         autoComplete='off' />
-//                 </div>
+    const getData = (email, password) => {
+        setEmail(email);
+        setPassword(password);
 
-//                 <div>
-//                     <button type='submit' className='btnInner'>Login</button>
-//                 </div>
-//             </form>
-//         </div>
-//     )
-// }
+    };
+    return (
+        <>
+            <div className='show-form' >
+                <div> UPLIFTING
+                    <label htmlFor="show-email">Email</label>
+                    <input value={email} type="text" name="show-email" id="show-email"
+                        autoComplete='off' onChange={(e) => setEmail(e.target.value)}/>
+                </div>
 
-// export default Showform
+                <div>
+                    <label htmlFor="show-password">Password</label>
+                    <input value={password} type="text" name="show-password" id="show-password"
+                        autoComplete='off' onChange={(e) => setPassword(e.target.value)}/>
+                </div>
+            </div>
+            <BasicForm getData1={getData} />
+           
+        </>
+    )
+}
+
+export default Showform

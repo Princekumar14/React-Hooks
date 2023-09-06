@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Showform from './Showform';
 
-const BasicForm = () => {
+const BasicForm = (props) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('');
 
@@ -10,13 +10,20 @@ const BasicForm = () => {
     const submitForm = (e) => {
         e.preventDefault();
 
-        const newEntry = { email: email, password: password };
-        setAllEntry([...allEntry, newEntry])
-        e.target.reset()
+        if(email && password){
+            const newEntry = { id: new Date().getTime().toString(), email: email, password: password };
+            setAllEntry([...allEntry, newEntry])
+            props.getData1(email, password)
+
+        }else{
+            alert("plz fill the form")
+        }
+
+
     }
     return (
         <>
-            <div className='form' >
+            <div className='form' > 
                 <form onSubmit={submitForm}>
                     <div>
                         <label htmlFor="email">Email</label>
@@ -36,40 +43,38 @@ const BasicForm = () => {
                         <button type='submit' className='btnInner'>Login</button>
                     </div>
                 </form>
+
+
             </div>
 
             <div >
-                {
-                    allEntry.map((currrentElement) => {
+                    {
+                        allEntry.map((currrentElement) => {
+                            const {id, email, password} = currrentElement;
 
-                        return ( 
-                        // <Showform/>
+                            return (
+                                // <Showform/>
 
-                            <div className='show-form' >
-                                <form onSubmit={submitForm}>
-                                    <div>
-                                        <label htmlFor="show-email">Email</label>
-                                        <input value={currrentElement.email} type="text" name="show-email" id="show-email"
-                                            autoComplete='off' />
-                                    </div>
 
-                                    <div>
-                                        <label htmlFor="show-password">Password</label>
-                                        <input value={currrentElement.password} type="text" name="show-password" id="show-password"
-                                            autoComplete='off' />
-                                    </div>
+                                <div className='show-form show-form1' key={id}>USING MAP
+                                        <div>
+                                            <label htmlFor="show-email">Email</label>
+                                            <input value={email} type="text" name="show-email" id="show-email"
+                                                autoComplete='off' onChange={(e) => setEmail(e.target.value)}/>
+                                        </div>
 
-                                    <div>
-                                        <button type='submit' className='btnInner'>Login</button>
-                                    </div>
-                                </form>
-                            </div>
-                        )
+                                        <div>
+                                            <label htmlFor="show-password">Password</label>
+                                            <input value={password} type="text" name="show-password" id="show-password"
+                                                autoComplete='off' onChange={(e) => setPassword(e.target.value)}/>
+                                        </div>
+                                </div>
+                            )
 
-                    })
+                        })
 
-                }
-            </div>
+                    }
+                </div>
         </>
     )
 }
