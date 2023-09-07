@@ -1,4 +1,4 @@
-/* html { 
+html { 
   font-size: 62.5%;
 }
 
@@ -29,6 +29,18 @@ div {
   flex-direction: column;
 } 
 
+p{
+  font-size: 3rem;
+  color: whitesmoke;
+  padding: 1rem;
+  width: 40rem;
+  border-radius: 5px;
+  background-color: rgb(58, 126, 199);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+  margin-top: 2rem;
+
+}
+
 h1 { 
   font-size: 3rem;
 }
@@ -40,6 +52,7 @@ h1 {
   border-radius: 5px;
   background-color: aliceblue;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+  margin-bottom: 2rem;
 }
 
 .btn { 
@@ -52,6 +65,7 @@ h1 {
   color: aliceblue;
   cursor: pointer;
   border-radius: 0.3rem;
+  width: 7rem;
 }
 
 .btn:hover{
@@ -77,7 +91,7 @@ h1 {
   font-size: 3rem;
   color: whitesmoke;
   padding: 1rem;
-  width: 25rem;
+  width: 40rem;
   border-radius: 5px;
   background-color: rgb(58, 126, 199);
   box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
@@ -85,6 +99,8 @@ h1 {
 .form input{
   border-radius: 0.5rem;
   border: none;
+  width: 95%;    
+
 }
 .form label{
  font-size: 2rem;
@@ -96,7 +112,7 @@ h1 {
   padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 25rem;
+  width: 40rem;
   border-radius: 5px;
   background-color: rgb(34, 242, 152);
   box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
@@ -107,7 +123,7 @@ h1 {
   padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 25rem;
+  width: 40rem;
   border-radius: 5px;
   background-color: rgb(96, 236, 20);
   box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
@@ -115,6 +131,8 @@ h1 {
 .show-form input{
   border-radius: 0.5rem;
   border: none;
+  width: 95%;
+
 }
 .show-form label{
  font-size: 2rem;
@@ -127,11 +145,11 @@ h1 {
   background-color: red;
   width: 50rem;
   height: 50rem;
-} */
+}
 
 
 /*---------------------fetch data from github using api-----------------------------*/
-body {
+/* body {
   background-color: #b3e5fc;
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
@@ -195,7 +213,7 @@ h2 {
 
 .number3 {
   font-weight: 500;
-}
+} */
 
 
 

@@ -4,11 +4,14 @@ import UseStateSimple from './component/UseStateSimple';
 import UseStateArray from './component/UseStateArray';
 import UseStateObjects from './component/UseStateObjects';
 import ShortCircuitEval from './component/ShortCircuitEval';
-import BasicForm from './component/BasicForm';
-import Showform from './component/Showform';
+import BasicForm from './component/forms/BasicForm';
+import Showform from './component/forms/Showform';
 import UseEffects1 from './component/useeffect/UseEffects1';
 import UseEffectCleanUpFunc from './component/useeffect/UseEffectCleanUpFunc';
 import UseEffectAPI from './component/useeffect/UseEffectAPI';
+import Uncontrolled from './component/forms/Uncontrolled';
+import UseReducer from './component/useReducer/UseReducer';
+import CompA from './component/useContext/CompA';
 function App() {
 
   return (
@@ -21,7 +24,10 @@ function App() {
       {/* <Showform/> */}
       {/* <UseEffects1 /> */}
       {/* <UseEffectCleanUpFunc /> */}
-      <UseEffectAPI />
+      {/* <UseEffectAPI /> */}
+      {/* <Uncontrolled /> */}
+      {/* <UseReducer /> */}
+       <CompA/> 
 
     </div>
   );
