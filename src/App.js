@@ -12,6 +12,7 @@ import UseEffectAPI from './component/useeffect/UseEffectAPI';
 import Uncontrolled from './component/forms/Uncontrolled';
 import UseReducer from './component/useReducer/UseReducer';
 import CompA from './component/useContext/CompA';
+import Home from './component/myapp/home';
 function App() {
 
   return (
@@ -27,7 +28,9 @@ function App() {
       {/* <UseEffectAPI /> */}
       {/* <Uncontrolled /> */}
       {/* <UseReducer /> */}
-       <CompA/> 
+
+       {/* <CompA/>  */}
+       <Home/>
 
     </div>
   );
