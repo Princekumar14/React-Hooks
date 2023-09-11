@@ -13,6 +13,8 @@ import Uncontrolled from './component/forms/Uncontrolled';
 import UseReducer from './component/useReducer/UseReducer';
 import CompA from './component/useContext/CompA';
 import Home from './component/myapp/home';
+import UesMemo from './component/useMemo/UesMemo';
+import Axios1 from './component/Axios/Axios1';
 function App() {
 
   return (
@@ -30,7 +32,9 @@ function App() {
       {/* <UseReducer /> */}
 
        {/* <CompA/>  */}
-       <Home/>
+       {/* <Home/> */}
+       {/* <UesMemo/> */}
+       <Axios1/>
 
     </div>
   );

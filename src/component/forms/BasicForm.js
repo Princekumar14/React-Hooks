@@ -38,7 +38,7 @@ const BasicForm = (props) => {
                             autoComplete='off'
                             onChange={(e) => setPassword(e.target.value)} />
                     </div>
-
+<input type="number" />
                     <div>
                         <button type='submit' className='btnInner'>Login</button>
                     </div>

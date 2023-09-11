@@ -17,11 +17,11 @@ const reducer = (state, action) => {
 }
 
 const UseReducer = () => {
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [stateLocal, dispatch] = useReducer(reducer, initialState)
     return (
         <>
             <div>
-                <h1>{state}</h1>
+                <h1>{stateLocal}</h1>
                 <button className="btn" onClick={() => dispatch({ type: "INCREMENT" })}>Plus</button>
                 <button className="btnInner" onClick={() => dispatch({ type: "DECREMENT" })}>Minus</button>
 
