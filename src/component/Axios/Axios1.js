@@ -20,7 +20,10 @@ const Axios1 = () => {
     <div>Axios1
         {
             userData.map((data)=>{
-                <div>{data.name}</div>
+                return (
+                    <div>{data.name}</div>
+                    
+                    )
             })
         }
     </div>

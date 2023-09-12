@@ -15,6 +15,7 @@ import CompA from './component/useContext/CompA';
 import Home from './component/myapp/home';
 import UesMemo from './component/useMemo/UesMemo';
 import Axios1 from './component/Axios/Axios1';
+import AxiosPost from './component/Axios/AxiosPost';
 function App() {
 
   return (
@@ -34,7 +35,8 @@ function App() {
        {/* <CompA/>  */}
        {/* <Home/> */}
        {/* <UesMemo/> */}
-       <Axios1/>
+       {/* <Axios1/> */}
+       <AxiosPost/>
 
     </div>
   );
